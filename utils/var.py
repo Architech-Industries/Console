@@ -263,5 +263,4 @@ class auth():
     token = ''
     org = ''
 
-def authtest():
-    
+#def authtest():

@@ -1,5 +1,8 @@
+from turtle import end_poly
 import PySimpleGUI as sg
 import utils
+from utils import var, authtest
+from influxdb_client import InfluxDBClient
 
 class AuthWin:
 
@@ -22,13 +25,15 @@ class AuthWin:
             event, values = window.Read()
             #print(event)
             if event == sg.WIN_CLOSED or event == 'Cancel':
-                break
+                window.close()
             if event == 'Test':
                 #utils.var.cmdRef()
-                print(utils.var.auth.url)
-                values['url']=utils.var.auth.url
-                #window['Order#'](value=var.commandvals.V0)                
-                break
-            if event == 'Modify':
+                var.auth.url = values['url']
+                var.auth.token = values['token']
+                var.auth.org = values['org']
+                print(var.auth.url, var.auth.token, var.auth.org)
+                authtest.authTestLoop()
+                #print(authtest.results)
+            if event == 'Confirm':
                 break
         window.close()
