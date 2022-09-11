@@ -150,7 +150,7 @@ class CommandMenu:
             closeOpts()
 
         def openWinAll():
-            #openWinD()
+            openWinD()
             openWinO()
             openWinE()
             openWinP()

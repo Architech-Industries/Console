@@ -255,3 +255,12 @@ def orderSelector():
 
 def ordName():
     CM0 = 46
+
+
+
+class auth():
+    url = ''
+    token = ''
+    org = ''
+
+#def authtest():
