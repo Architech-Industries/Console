@@ -9,7 +9,7 @@ class AuthWin:
     sg.theme('darkgrey1')
 
     #@classmethod
-    def authGui():
+    def authGui(self):
         auth = [[sg.Frame('Operational Metrics',
                      [[sg.Text('Host:'), sg.Input(k='url')],
                       [sg.Text('Token: '), sg.Input(k='token')],
