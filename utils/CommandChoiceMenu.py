@@ -1,4 +1,3 @@
-import sys
 import PySimpleGUI as sg
 from utils import var
 import time

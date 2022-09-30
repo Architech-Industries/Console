@@ -3,7 +3,6 @@ from random import seed
 from random import randint
 from random import sample
 from random import choice
-import os
 #from random import random
 #from datetime import datetime
 #import PySimpleGUI as sg

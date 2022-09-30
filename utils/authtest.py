@@ -1,10 +1,7 @@
-from utils import var, auth
+from utils import var
 from influxdb_client import InfluxDBClient
-#Point = str
-from datetime import datetime
 
-from influxdb_client import InfluxDBClient, Point, WritePrecision
-from influxdb_client.client.write_api import SYNCHRONOUS
+from influxdb_client import InfluxDBClient
 
 # You can generate a Token from the "Tokens Tab" in the UI
 token = ""

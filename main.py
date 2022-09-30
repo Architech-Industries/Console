@@ -1,4 +1,3 @@
-import utils
 from utils import CommandChoiceMenu as ccm
 from utils import var
 from utils import functions as fnc
