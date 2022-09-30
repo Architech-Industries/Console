@@ -24,7 +24,7 @@ class AuthWin:
         while True:
             event, values = window.Read()
             #print(event)
-            if event == sg.WIN_CLOSED or event == 'Cancel':
+            if event in (sg.WIN_CLOSED, 'Cancel'):
                 window.close()
             if event == 'Test':
                 #utils.var.cmdRef()
