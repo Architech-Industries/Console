@@ -13,7 +13,7 @@ bucket = ""
 
 
 def authTestLoop():
-    client = InfluxDBClient(url="http://192.168.21.71:8086", token=token)
+    client = InfluxDBClient(url="", token=token)
     write_api = client.write_api()
     query_api = client.query_api()
 
