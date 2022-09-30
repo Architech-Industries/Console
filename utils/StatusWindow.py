@@ -8,7 +8,7 @@ class StatWin:
     sg.theme('darkgrey1')
 
     #@classmethod
-    def statGui():
+    def statGui(self):
         ops = [[sg.Frame('Operational Metrics',
                      [[sg.Text('Status:'), sg.T(om.stat)],
                       [sg.Text('Current Operation: '), sg.T(om.opname)],

@@ -11,7 +11,7 @@ class CommandMenu:
         return sg.pin(sg.Column(Layout, key=key))
 
 
-    def CCGUI():
+    def CCGUI(self):
         sg.SetOptions(text_justification='right')
         flags = [ 
                   ##__Execution Area__##
