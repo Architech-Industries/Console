@@ -1,9 +1,7 @@
-import utils
 from utils import CommandChoiceMenu as ccm
 from utils import StatusWindow as swin
 from utils import var
 from utils import auth
-import os
 
 
 def mainLoop():

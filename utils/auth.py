@@ -1,8 +1,5 @@
-from turtle import end_poly
 import PySimpleGUI as sg
-import utils
 from utils import var, authtest
-from influxdb_client import InfluxDBClient
 
 class AuthWin:
 
